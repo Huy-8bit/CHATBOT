@@ -8,6 +8,11 @@ import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
+<< << << < HEAD: test.py
+== == == =
+
+>>>>>> > 2ccccd720f46849bffda222f853cbc78042ee7da: youtube.py
+
 
 with open("intents.json") as file:
     data = json.load(file)
