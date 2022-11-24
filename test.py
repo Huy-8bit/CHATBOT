@@ -1,13 +1,13 @@
+import pickle
+import json
+import random
+import tensorflow
+import tflearn
+import numpy
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
-import numpy
-import tflearn
-import tensorflow
-import random
-import json
-import pickle
 
 with open("intents.json") as file:
     data = json.load(file)
@@ -58,7 +58,6 @@ except:
         training.append(bag)
         output.append(output_row)
 
-
     training = numpy.array(training)
     output = numpy.array(output)
 
@@ -80,7 +79,8 @@ try:
 except:
     model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
-    
+
+
 def bag_of_words(s, words):
     bag = [0 for _ in range(len(words))]
 
@@ -91,7 +91,7 @@ def bag_of_words(s, words):
         for i, w in enumerate(words):
             if w == se:
                 bag[i] = 1
-            
+
     return numpy.array(bag)
 
 
@@ -111,5 +111,6 @@ def chat():
                 responses = tg['responses']
 
         print(random.choice(responses))
+
 
 chat()
