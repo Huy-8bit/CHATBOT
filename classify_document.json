@@ -6,14 +6,15 @@
         {
             "type": "question",
             "key": [
-                "khi nào",
-                "ở đâu",
-                "?",
                 "lúc nào",
                 "như nào",
                 "thế nào",
                 "làm sao",
-                "tại sao"
+                "tại sao",
+                "khi nào",
+                "ở đâu",
+                "?",
+                "ai"
             ]
         },
         {
@@ -35,7 +36,7 @@
         },
         {
             "type": "request",
-            "key": ["hãy", "giúp", "xin hãy", "hộ", "giùm", "làm ơn"]
+            "key": ["hãy", "giúp", "xin hãy", "hộ", "giùm", "làm ơn", "nhờ", "muốn"]
         }
 
     ]

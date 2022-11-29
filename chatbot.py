@@ -49,25 +49,30 @@ def analysis_message(messages_input, classes):
 
 def get_structure(messages_input):
     result = word_tokenize(messages_input)
-    return result
+    
 
 def process_message(messages_input):
     structure = get_structure(messages_input)
-    print(structure)
+    
     
         
     
 def get_message_process(messages_input, intents):
     classify = analysis_message(messages_input, classes)
-    if classify == []:
-        return "Tôi không hiểu ý bạn"
-    elif 'greet' in classify:
+    if 'greet' in classify:
         process_message(messages_input)
         return "Chào bạn, tôi có thể giúp gì cho bạn"
     elif 'request' in classify:
         process_message(messages_input)
-        return "Bạn muốn tìm kiếm gì?"
-
+        return "Bạn muốn tôi giúp gì cho bạn?"
+    elif 'question' in classify:
+        process_message(messages_input)
+        return "tôi sẽ tìm câu trả lời cho bạn"
+    elif 'exclamatory' in classify:
+        process_message(messages_input)
+        return "Tôi rất vui vì được giúp đỡ bạn"
+    else:
+        return "Tôi không hiểu bạn nói gì"
 
 intents = load_data('data.json')
 classes = load_data('classify_document.json')
@@ -75,11 +80,11 @@ classes = load_data('classify_document.json')
 while True:
     # print(intents)
     print("Bạn: ", end="")
-    messages_input = input()
-    if messages_input == "quit":
+    messages_input = " " + input()
+    if messages_input == " quit":
         break
     else:
         replay = get_message_process(messages_input, intents)
         print("Bot: ", replay)
-
+    
   
