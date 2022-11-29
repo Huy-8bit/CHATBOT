@@ -15,7 +15,7 @@ import nltk
 # nltk.download('punkt')
 # nltk.download('stopwords')
 # nltk.download('wordnet')
-
+from underthesea import word_tokenize
 
 # import data.json
 
@@ -47,19 +47,23 @@ def analysis_message(messages_input, classes):
     return classify
 
 def get_structure(messages_input):
-    Structure = load_data('structure.json')
-    for i in range(len(Structure['subject']['self'])):
-        break
-        print(Structure['subject']['self'][i])
+    print("get_structure")
+    struct_message = word_tokenize(messages_input)
+    print(struct_message)
     
     
-def process_message(messages_input, intents, classify):
+        
+    
+def process_message(messages_input, intents):
+    classify = analysis_message(messages_input, classes)
     if classify == []:
         return "Tôi không hiểu ý bạn"
     elif 'greet' in classify:
         get_structure(messages_input)
         return "Chào bạn, tôi có thể giúp gì cho bạn"
-        
+    elif 'request' in classify:
+        get_structure(messages_input)
+        return "Bạn muốn tìm kiếm gì?"
 
 
 intents = load_data('data.json')
@@ -72,6 +76,7 @@ while True:
     if messages_input == "quit":
         break
     else:
-        classify = analysis_message(messages_input, classes)
-        replay = process_message(messages_input, intents, classify)
+        replay = process_message(messages_input, intents)
         print("Bot: ", replay)
+
+  
