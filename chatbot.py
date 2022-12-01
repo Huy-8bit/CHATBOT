@@ -49,6 +49,7 @@ def analysis_message(messages_input, classes):
 
 def get_structure(messages_input):
     result = word_tokenize(messages_input)
+    print(result)
     
 
 def process_message(messages_input):

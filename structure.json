@@ -3,8 +3,9 @@
         "self": ["tôi", "tớ", "mình", "tao"],
         "Enemy": ["bạn", "các bạn", "mày", "cậu", "anh", "chị"]
     },
-    "predicate": {
-        "Verb": ["đặt lịch", "hẹn", "mở", "đăng ký", "hủy", "xóa", "tạo"]
+    "Verb": ["đặt lịch", "hẹn", "mở", "đăng ký", "hủy", "xóa", "tạo"],
+    "adjective": {
+        "Characteristics"
     }
 
 }
