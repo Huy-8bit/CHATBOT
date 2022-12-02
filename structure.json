@@ -5,7 +5,7 @@
     },
     "Verb": ["đặt lịch", "hẹn", "mở", "đăng ký", "hủy", "xóa", "tạo"],
     "adjective": {
-        "Characteristics"
+        "Characteristics": [""]
     }
 
 }

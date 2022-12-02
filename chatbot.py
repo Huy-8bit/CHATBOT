@@ -88,4 +88,3 @@ while True:
         replay = get_message_process(messages_input, intents)
         print("Bot: ", replay)
     
-  
