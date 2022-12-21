@@ -100,7 +100,7 @@ classes = load_data('classify_document.json')
 
 while True:
     # print(intents)
-    print("Bạn: ", end="")
+    print("Bạn: ", end="") #asdasd
     messages_input = " " + input()
     if messages_input == " quit":
         break
