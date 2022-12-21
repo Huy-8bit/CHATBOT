@@ -1,0 +1,11 @@
+{
+    "Noun": {
+        "self": ["tôi", "tớ", "mình", "tao"],
+        "Enemy": ["bạn", "các bạn", "mày", "cậu", "anh", "chị"]
+    },
+    "Verb": ["đặt lịch", "hẹn", "mở", "đăng ký", "hủy", "xóa", "tạo"],
+    "adjective": {
+        "Characteristics": [""]
+    }
+
+}
