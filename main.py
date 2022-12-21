@@ -72,7 +72,7 @@ def process_message_question(messages_input):
     check_key = find_classify_key(structure, "E")
 
 
-def get_message_process(messages_input, intents):
+def get_message_process(messages_input):
     classify = analysis_message(messages_input, classes)
     print("classify: ", classify)
     if 'question' in classify:
@@ -92,7 +92,6 @@ def get_message_process(messages_input, intents):
         return "Tôi không hiểu bạn nói gì"
 
 
-intents = load_data('data.json')
 classes = load_data('classify_document.json')
 
 while True:
@@ -102,5 +101,5 @@ while True:
     if messages_input == " quit":
         break
     else:
-        replay = get_message_process(messages_input, intents)
+        replay = get_message_process(messages_input)
         print("Bot: ", replay)
