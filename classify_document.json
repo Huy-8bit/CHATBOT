@@ -1,9 +1,5 @@
 {
     "intents": [{
-            "type": "greet",
-            "key": ["hi", "hello", "chào", "hey"]
-        },
-        {
             "type": "question",
             "key": [
                 "lúc nào",
@@ -17,6 +13,11 @@
                 "ai"
             ]
         },
+        {
+            "type": "greet",
+            "key": ["hi", "hello", "chào", "hey"]
+        },
+
         {
             "type": "narration",
             "key": ["sẽ là", "là", "có thể là", "nghĩ"]
@@ -38,6 +39,5 @@
             "type": "request",
             "key": ["hãy", "giúp", "xin hãy", "hộ", "giùm", "làm ơn", "nhờ", "muốn"]
         }
-
     ]
 }

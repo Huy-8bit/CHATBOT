@@ -16,8 +16,11 @@ import nltk
 # nltk.download('stopwords')
 # nltk.download('wordnet')
 from underthesea import word_tokenize
+from underthesea import pos_tag
 
 # import data.json
+
+
 
 
 def load_data(file_path):
@@ -48,27 +51,44 @@ def analysis_message(messages_input, classes):
 
 
 def get_structure(messages_input):
-    result = word_tokenize(messages_input)
+    result = pos_tag(messages_input)
     print(result)
-    
+    return result
 
 def process_message(messages_input):
     structure = get_structure(messages_input)
+
+def find_classify_key(structure, key_classify):
+    for i in range(len(structure)):
+        if structure[i][1] == key_classify:
+            return structure[i][0]
+    return ""
+
+def process_message_question(messages_input):
+    structure = get_structure(messages_input)
+    check_key = find_classify_key(structure, "E")
+    print(structure)
+    print(word_tokenize(messages_input))
+
+    
+    
     
     
         
     
 def get_message_process(messages_input, intents):
     classify = analysis_message(messages_input, classes)
-    if 'greet' in classify:
+    print("classify: ", classify)
+    if 'question' in classify:
+        process_message_question(messages_input)
+        return "tôi sẽ tìm câu trả lời cho bạn"
+    elif 'greet' in classify:
         process_message(messages_input)
         return "Chào bạn, tôi có thể giúp gì cho bạn"
     elif 'request' in classify:
         process_message(messages_input)
         return "Bạn muốn tôi giúp gì cho bạn?"
-    elif 'question' in classify:
-        process_message(messages_input)
-        return "tôi sẽ tìm câu trả lời cho bạn"
+
     elif 'exclamatory' in classify:
         process_message(messages_input)
         return "Tôi rất vui vì được giúp đỡ bạn"

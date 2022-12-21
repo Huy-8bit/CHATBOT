@@ -1,0 +1,49 @@
+{
+    "Time": [{
+            "patterns": "bắt đầu",
+            "responses": "8h30"
+        },
+        {
+            "patterns": "kết thúc",
+            "responses": "12h30"
+        },
+        {
+            "patterns": "thời gian",
+            "responses": "8h30 - 12h30"
+        },
+        {
+            "patterns": "bao lâu",
+            "responses": "4 tiếng"
+        }
+    ],
+    "Location": [{
+            "patterns": "Nhà",
+            "responses": "Tầng 3, Tòa nhà 1, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
+        },
+        {
+            "patterns": "Cơ quan",
+            "responses": "Tòa nhà 2, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
+        }
+    ],
+    "bank": [{
+            "patterns": "Ngân hàng",
+            "responses": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam (Agribank)"
+        },
+        {
+            "patterns": "Số tài khoản",
+            "responses": "1902 0000 0000 0000 0000"
+        },
+        {
+            "patterns": "Tên tài khoản",
+            "responses": "Nguyễn Văn A"
+        },
+        {
+            "patterns": "Chi nhánh",
+            "responses": "Chi nhánh Thủ Đức"
+        },
+        {
+            "patterns": "Số điện thoại",
+            "responses": "1900 54 54 81"
+        }
+    ]
+}
