@@ -1,0 +1,43 @@
+{
+    "intents": [{
+            "type": "question",
+            "key": [
+                "lúc nào",
+                "như nào",
+                "thế nào",
+                "làm sao",
+                "tại sao",
+                "khi nào",
+                "ở đâu",
+                "?",
+                "ai"
+            ]
+        },
+        {
+            "type": "greet",
+            "key": ["hi", "hello", "chào", "hey"]
+        },
+
+        {
+            "type": "narration",
+            "key": ["sẽ là", "là", "có thể là", "nghĩ"]
+        },
+        {
+            "type": "exclamatory",
+            "key": [
+                "cảm ơn",
+                "ôi sao",
+                "ôi trời",
+                "trời ơi",
+                "hỡi ơi",
+                "hay quá",
+                "hay lắm",
+                "lắm"
+            ]
+        },
+        {
+            "type": "request",
+            "key": ["hãy", "giúp", "xin hãy", "hộ", "giùm", "làm ơn", "nhờ", "muốn"]
+        }
+    ]
+}
