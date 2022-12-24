@@ -1,4 +1,4 @@
-# crate chatbot
+
 
 
 # import logging
@@ -12,41 +12,8 @@ import numpy as np
 import random
 import json
 import nltk
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# nltk.download('wordnet')
 from underthesea import word_tokenize
 from underthesea import pos_tag
-
-# import data.json
-
-
-def load_data(file_path):
-    with open(file_path, encoding="utf8") as json_data:
-        intents = json.load(json_data)
-
-    return intents
-
-
-def preprocess_message(documents):
-    # convert to array of token
-    list_results = documents.split()
-    for i in range(len(list_results)):
-        list_results[i] = list_results[i].lower()
-    return list_results
-
-
-def analysis_message(messages_input, classes):
-    classify = []
-    for i in range(len(classes['intents'])):
-        for j in range(len(classes['intents'][i]['key'])):
-            check = messages_input.find(classes['intents'][i]['key'][j])
-            if check > 0:
-                text = classes['intents'][i]['type']
-                classify.append(text)
-
-    return classify
-
 
 def get_structure(messages_input):
     result = pos_tag(messages_input)
@@ -69,7 +36,6 @@ def process_message_question(messages_input):
     structure = get_structure(messages_input)
     print(word_tokenize(messages_input))
     print("structure: ", structure)
-    check_key = find_classify_key(structure, "E")
 
 
 def get_message_process(messages_input):
@@ -92,14 +58,13 @@ def get_message_process(messages_input):
         return "Tôi không hiểu bạn nói gì"
 
 
-classes = load_data('classify_document.json')
-
-while True:
-    # print(intents)
-    print("Bạn: ", end="")
-    messages_input = " " + input()
-    if messages_input == " quit":
-        break
-    else:
-        replay = get_message_process(messages_input)
-        print("Bot: ", replay)
+def main():
+    while True:
+        # print(intents)
+        print("Bạn: ", end="")
+        messages_input = " " + input()
+        if 'quit' in messages_input:
+            break
+        else:
+            replay = get_message_process(messages_input)
+            print("Bot: ", replay)
