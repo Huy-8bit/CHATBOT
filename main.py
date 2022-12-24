@@ -15,6 +15,9 @@ import nltk
 from underthesea import word_tokenize
 from underthesea import pos_tag
 
+import sentence_classification
+
+
 def get_structure(messages_input):
     result = pos_tag(messages_input)
     return result
@@ -39,7 +42,7 @@ def process_message_question(messages_input):
 
 
 def get_message_process(messages_input):
-    classify = analysis_message(messages_input, classes)
+    classify = sentence_classification.analysis_message(messages_input)
     print("classify: ", classify)
     if 'question' in classify:
         process_message_question(messages_input)
@@ -62,9 +65,13 @@ def main():
     while True:
         # print(intents)
         print("Bạn: ", end="")
-        messages_input = " " + input()
+        messages_input = " " + input() 
         if 'quit' in messages_input:
             break
         else:
             replay = get_message_process(messages_input)
             print("Bot: ", replay)
+            
+
+main()
+            

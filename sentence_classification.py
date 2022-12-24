@@ -11,7 +11,7 @@ classes = load_data('classify_document.json')
     
 
 
-def analysis_message(messages_input, classes):
+def analysis_message(messages_input):
     classify = []
     for i in range(len(classes['intents'])):
         for j in range(len(classes['intents'][i]['key'])):
