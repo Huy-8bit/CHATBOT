@@ -1,49 +1,122 @@
 {
-    "Time": [{
-            "patterns": "bắt đầu",
-            "responses": "8h30"
+    "classes": [{
+        "key": ["bank", "tài khoản", "ngân hàng", "số tài khoản", "tên ngân hàng", "chi nhánh", "số điện thoại", "tên tài khoản"],
+        "classes": ["bank"]
+    }, {
+        "key": ["coin", "tiền điện tử", "đồng tiền", "giá cả", "địa chỉ ví", "số tiền"],
+        "classes": ["coins"]
+    }],
+    "quection": [{
+            "key": ["khi nào", "thời gian", "bao lâu", "lúc nào", "bao giờ", "ngày"],
+            "type": ["time"]
         },
         {
-            "patterns": "kết thúc",
-            "responses": "12h30"
+            "key": ["địa điểm", "địa chỉ", "địa phương"],
+            "type": ["location"]
         },
         {
-            "patterns": "thời gian",
-            "responses": "8h30 - 12h30"
+            "key": ["ngày", "tuần", "tháng", "năm"],
+            "type": ["date"]
         },
         {
-            "patterns": "bao lâu",
-            "responses": "4 tiếng"
+            "key": ["giá", "chi phí", "tiền"],
+            "type": ["price"]
+        },
+        {
+            "key": ["tên", "tên gọi", "địa danh"],
+            "type": ["name"]
         }
     ],
-    "Location": [{
-            "patterns": "Nhà",
-            "responses": "Tầng 3, Tòa nhà 1, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
+    "data": {
+        "bank": {
+            "data": {
+                "Time": [{
+                        "patterns": "bắt đầu",
+                        "responses": "8h30"
+                    },
+                    {
+                        "patterns": "kết thúc",
+                        "responses": "12h30"
+                    },
+                    {
+                        "patterns": "thời gian",
+                        "responses": "8h30 - 12h30"
+                    },
+                    {
+                        "patterns": "bao lâu",
+                        "responses": "4 tiếng"
+                    }
+                ],
+                "Location": [{
+                        "patterns": "Nhà",
+                        "responses": "Tầng 3, Tòa nhà 1, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
+                    },
+                    {
+                        "patterns": "Cơ quan",
+                        "responses": "Tòa nhà 2, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
+                    }
+                ],
+                "bank": [{
+                        "patterns": "tên ngân hàng",
+                        "responses": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam (Agribank)"
+                    },
+                    {
+                        "patterns": "Số tài khoản",
+                        "responses": "1902 0000 0000 0000 0000"
+                    },
+                    {
+                        "patterns": "Tên tài khoản",
+                        "responses": "Nguyễn Văn A"
+                    },
+                    {
+                        "patterns": "Chi nhánh",
+                        "responses": "Chi nhánh Thủ Đức"
+                    },
+                    {
+                        "patterns": "Số điện thoại",
+                        "responses": "1900 54 54 81"
+                    }
+                ]
+            }
         },
-        {
-            "patterns": "Cơ quan",
-            "responses": "Tòa nhà 2, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
+        "coins": {
+            "key": ["coin", "tiền điện tử", "đồng tiền", "giá cả", "địa chỉ ví", "số tiền"],
+            "data": {
+                "bitcoin": [{
+                        "patterns": "tên tiền điện tử",
+                        "responses": "Bitcoin"
+                    },
+                    {
+                        "patterns": "giá cả",
+                        "responses": "1 Bitcoin bằng 45,000,000 đồng"
+                    },
+                    {
+                        "patterns": "địa chỉ ví",
+                        "responses": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
+                    },
+                    {
+                        "patterns": "số tiền",
+                        "responses": "Tôi có 1 Bitcoin"
+                    }
+                ],
+                "ethereum": [{
+                        "patterns": "tên tiền điện tử",
+                        "responses": "Ethereum"
+                    },
+                    {
+                        "patterns": "giá cả",
+                        "responses": "1 Ethereum bằng 20,000,000 đồng"
+                    },
+                    {
+                        "patterns": "địa chỉ ví",
+                        "responses": "0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8"
+                    },
+                    {
+                        "patterns": "số tiền",
+                        "responses": "Tôi có 3 Ethereum"
+                    }
+                ]
+            }
         }
-    ],
-    "bank": [{
-            "patterns": "Ngân hàng",
-            "responses": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam (Agribank)"
-        },
-        {
-            "patterns": "Số tài khoản",
-            "responses": "1902 0000 0000 0000 0000"
-        },
-        {
-            "patterns": "Tên tài khoản",
-            "responses": "Nguyễn Văn A"
-        },
-        {
-            "patterns": "Chi nhánh",
-            "responses": "Chi nhánh Thủ Đức"
-        },
-        {
-            "patterns": "Số điện thoại",
-            "responses": "1900 54 54 81"
-        }
-    ]
+    }
 }
