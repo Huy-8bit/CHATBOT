@@ -25,98 +25,35 @@
         {
             "key": ["tên", "tên gọi", "địa danh"],
             "type": ["name"]
+        },
+        {
+            "key": ["thuộc tính", "tính năng", "đặc điểm", "độ bền"],
+            "type": ["attribute"]
         }
     ],
-    "data": {
-        "bank": {
-            "data": {
-                "Time": [{
-                        "patterns": "bắt đầu",
-                        "responses": "8h30"
-                    },
-                    {
-                        "patterns": "kết thúc",
-                        "responses": "12h30"
-                    },
-                    {
-                        "patterns": "thời gian",
-                        "responses": "8h30 - 12h30"
-                    },
-                    {
-                        "patterns": "bao lâu",
-                        "responses": "4 tiếng"
-                    }
-                ],
-                "Location": [{
-                        "patterns": "Nhà",
-                        "responses": "Tầng 3, Tòa nhà 1, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
-                    },
-                    {
-                        "patterns": "Cơ quan",
-                        "responses": "Tòa nhà 2, Khu đô thị mới, Phường Linh Trung, Quận Thủ Đức, TP. Hồ Chí Minh"
-                    }
-                ],
-                "bank": [{
-                        "patterns": "tên ngân hàng",
-                        "responses": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam (Agribank)"
-                    },
-                    {
-                        "patterns": "Số tài khoản",
-                        "responses": "1902 0000 0000 0000 0000"
-                    },
-                    {
-                        "patterns": "Tên tài khoản",
-                        "responses": "Nguyễn Văn A"
-                    },
-                    {
-                        "patterns": "Chi nhánh",
-                        "responses": "Chi nhánh Thủ Đức"
-                    },
-                    {
-                        "patterns": "Số điện thoại",
-                        "responses": "1900 54 54 81"
-                    }
-                ]
-            }
+    "data": [{
+            "classes": "bank",
+            "patterns": ["vietcombank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
+            "responses": ["success", "8h30", "17h30", "Số 1, Đường 3/2, Phường 12, Quận 10, Tp. Hồ Chí Minh", "028 38 222 222"]
+        }, {
+            "classes": "bank",
+            "patterns": ["techcombank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
+            "responses": ["success", "8h00", "17h00", "Số 2, Đường 3/2, Phường 14, Quận 10, Tp. Hồ Chí Minh", "028 38 111 111"]
         },
-        "coins": {
-            "key": ["coin", "tiền điện tử", "đồng tiền", "giá cả", "địa chỉ ví", "số tiền"],
-            "data": {
-                "bitcoin": [{
-                        "patterns": "tên tiền điện tử",
-                        "responses": "Bitcoin"
-                    },
-                    {
-                        "patterns": "giá cả",
-                        "responses": "1 Bitcoin bằng 45,000,000 đồng"
-                    },
-                    {
-                        "patterns": "địa chỉ ví",
-                        "responses": "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"
-                    },
-                    {
-                        "patterns": "số tiền",
-                        "responses": "Tôi có 1 Bitcoin"
-                    }
-                ],
-                "ethereum": [{
-                        "patterns": "tên tiền điện tử",
-                        "responses": "Ethereum"
-                    },
-                    {
-                        "patterns": "giá cả",
-                        "responses": "1 Ethereum bằng 20,000,000 đồng"
-                    },
-                    {
-                        "patterns": "địa chỉ ví",
-                        "responses": "0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8"
-                    },
-                    {
-                        "patterns": "số tiền",
-                        "responses": "Tôi có 3 Ethereum"
-                    }
-                ]
-            }
+        {
+            "classes": "bank",
+            "patterns": ["vpbank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
+            "responses": ["success", "8h00", "17h00", "Số 3, Đường 4/2, Phường 15, Quận 11, Tp. Hồ Chí Minh", "028 38 555 555"]
+        },
+        {
+            "classes": "bank",
+            "patterns": ["agribank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
+            "responses": ["success", "8h00", "17h00", "Số 4, Đường 3/2, Phường 12, Quận 10, Tp. Hồ Chí Minh", "028 38 777 777"]
+        },
+        {
+            "classes": "bank",
+            "patterns": ["mbbank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
+            "responses": ["success", "8h30", "17h30", "Số 5, Đường 4/2, Phường 13, Quận 11, Tp. Hồ Chí Minh", "028 38 333 333"]
         }
-    }
+    ]
 }

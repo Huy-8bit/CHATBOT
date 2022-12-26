@@ -1,0 +1,21 @@
+{
+    "data": [{
+        "tag": "question",
+        "story": [{
+                "patterns": ["khi nào mở cửa ngân hàng?", "khi nào ngân hàng hoạt động?"],
+                "responses": ["Ngân hàng mở cửa từ 8h sáng đến 17h chiều từ thứ 2 đến thứ 6. Ngân hàng đóng cửa vào thứ 7 và chủ nhật."]
+            }, {
+                "patterns": ["Tôi muốn hỏi về giá cả của sản phẩm?", "Sản phẩm này bao nhiêu tiền?"],
+                "responses": ["Giá cả của sản phẩm này là xxx đồng."]
+            },
+            {
+                "patterns": ["Tôi muốn hỏi về địa điểm của cửa hàng?", "Cửa hàng này ở đâu?"],
+                "responses": ["Cửa hàng này nằm tại địa chỉ xxx."]
+            },
+            {
+                "patterns": ["Tôi muốn hỏi về cách sử dụng sản phẩm?", "Làm sao sử dụng sản phẩm này?"],
+                "responses": ["Để sử dụng sản phẩm này, bạn cần thực hiện các bước sau: xxx."]
+            }
+        ]
+    }]
+}
