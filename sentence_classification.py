@@ -7,6 +7,12 @@ def load_data(file_path):
 
     return intents
 
+def write_data(file_path, data):
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+        
+
+
 classes = load_data('classify_document.json')
     
 
