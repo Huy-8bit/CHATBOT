@@ -1,9 +1,7 @@
 {
-    "data": [
-        {
+    "data": [{
             "tag": "question",
-            "story": [
-                {
+            "story": [{
                     "patterns": [
                         "khi nào mở cửa ngân hàng?",
                         "khi nào ngân hàng hoạt động?"
@@ -51,8 +49,7 @@
         },
         {
             "tag": "greeting",
-            "story": [
-                {
+            "story": [{
                     "patterns": [
                         "xin chào"
                     ],
@@ -80,16 +77,14 @@
         },
         {
             "tag": "joke",
-            "story": [
-                {
-                    "patterns": [
-                        "hôm nay ăn gì"
-                    ],
-                    "responses": [
-                        "ăn cơm tấm"
-                    ]
-                }
-            ]
+            "story": [{
+                "patterns": [
+                    "hôm nay ăn gì"
+                ],
+                "responses": [
+                    "ăn cơm tấm"
+                ]
+            }]
         }
     ]
 }
