@@ -15,18 +15,14 @@
                         "tôi muốn hỏi về giá cả của sản phẩm?",
                         "sản phẩm này bao nhiêu tiền?"
                     ],
-                    "responses": [
-                        "giá cả của sản phẩm này là xxx đồng."
-                    ]
+                    "responses": ["giá cả của sản phẩm này là xxx đồng."]
                 },
                 {
                     "patterns": [
                         "tôi muốn hỏi về địa điểm của cửa hàng?",
                         "cửa hàng này ở đâu?"
                     ],
-                    "responses": [
-                        "cửa hàng này nằm tại địa chỉ xxx."
-                    ]
+                    "responses": ["cửa hàng này nằm tại địa chỉ xxx."]
                 },
                 {
                     "patterns": [
@@ -38,52 +34,32 @@
                     ]
                 },
                 {
-                    "patterns": [
-                        "giá vàng hôm nay?"
-                    ],
-                    "responses": [
-                        "50 triệu 1 cây vàng"
-                    ]
+                    "patterns": ["giá vàng hôm nay?"],
+                    "responses": ["50 triệu 1 cây vàng"]
                 }
             ]
         },
         {
             "tag": "greeting",
             "story": [{
-                    "patterns": [
-                        "xin chào"
-                    ],
-                    "responses": [
-                        "rất vui được gặp bạn"
-                    ]
+                    "patterns": ["xin chào"],
+                    "responses": ["rất vui được gặp bạn"]
                 },
                 {
-                    "patterns": [
-                        "chào"
-                    ],
-                    "responses": [
-                        "chào bạn"
-                    ]
+                    "patterns": ["chào", "chào bạn"],
+                    "responses": ["chào bạn"]
                 },
                 {
-                    "patterns": [
-                        "bạn khỏe không"
-                    ],
-                    "responses": [
-                        "rất khỏe nha bạn"
-                    ]
+                    "patterns": ["bạn khỏe không"],
+                    "responses": ["rất khỏe nha bạn"]
                 }
             ]
         },
         {
             "tag": "joke",
             "story": [{
-                "patterns": [
-                    "hôm nay ăn gì"
-                ],
-                "responses": [
-                    "ăn cơm tấm"
-                ]
+                "patterns": ["hôm nay ăn gì"],
+                "responses": ["ăn cơm tấm"]
             }]
         }
     ]
