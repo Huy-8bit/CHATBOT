@@ -95,7 +95,7 @@ def process_message_question(messages_input, data):
 
 
 def test():
-    messages_input = "số điện thoại và địa chỉ của techcombank là gì?"
+    messages_input = input("user: ")
     messages_input = messages_input.lower()
     # messages_input = "khi nào mở cửa ngân hàng?"
     print("messages_input: ", messages_input)

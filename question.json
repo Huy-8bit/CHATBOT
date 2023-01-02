@@ -32,6 +32,25 @@
         "litecoin"
       ],
       "classes": ["coins"]
+    },
+    {
+      "key": [
+        "cổ phiếu",
+        "dividend",
+        "lợi nhuận từ việc bán cổ phiếu",
+        "thị trường chứng khoán",
+        "đại lý môi giới",
+        "danh mục cổ phiếu",
+        "giao dịch",
+        "sàn chứng khoán",
+        "sàn giao dịch chứng khoán",
+        "vốn hóa thị trường",
+        "đợt phát hành cổ phiếu đầu tư (IPO)",
+        "chỉ số chứng khoán",
+        "thị trường giảm giá",
+        "thị trường tăng giá"
+      ],
+      "classes": ["stock"]
     }
   ],
   "quection": [
@@ -156,6 +175,30 @@
           "subject": "litecoin",
           "key": ["giá", "sàn giao dịch", "đơn vị"],
           "responses": ["$ 50", "https://www.bitstamp.net/", "LTC"]
+        }
+      ]
+    },
+    {
+      "classes": "stock",
+      "data": [
+        {
+          "subject": "bibica",
+          "key": [
+            "giá",
+            "sàn giao dịch",
+            "mã chứng khoán",
+            "EPS",
+            "PE",
+            "ROE & ROA",
+            "ROA",
+            "P/B",
+            "beta",
+            "hệ số thanh khoản",
+            "chỉ số nợ D/E",
+            "cổ tức",
+            "đáy cổ phiếu"
+          ],
+          "responses": ["$ 8.000", "https://www.bitstamp.net/", "BTC", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
         }
       ]
     }
