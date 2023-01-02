@@ -18,16 +18,15 @@ def lower_strings(data):
 lower_strings(data)
 
 
-def get_response(input_text,data):
+def get_response(input_text, data):
     for value in data['data']:
         for i in range(len(value['story'])):
             for j in range(len(value['story'][i]['patterns'])):
                 if input_text == value['story'][i]['patterns'][j]:
                     if value['story'][i]['responses']:
                         return value['story'][i]['responses'][0]
-                    
-    return "NULL"
 
+    return "NULL"
 
 
 def add_response(input_text, result, tag, data):
@@ -54,22 +53,19 @@ def add_response(input_text, result, tag, data):
     sentence_classification.write_data('story.json', data)
 
 
-
-    
 def get_text(input_text):
-    
+
     if input_text == "exit":
         return "exit"
 
     result = get_response(input_text, data)
 
-
     if result == "NULL":
         print("Don't have this story")
-    
+
     else:
-        print("Bot: " , result)
-    
+        print("Bot: ", result)
+
     return result
 
 
@@ -81,11 +77,12 @@ for value in json2['data']:
         for j in range(len(value['story'][i]['patterns'])):
             patterns = value['story'][i]['patterns'][j]
             responses = value['story'][i]['responses'][0]
+            print("User: ", patterns)
             result = get_text(patterns)
             if result == "NULL":
                 add_response(patterns, responses, tag, data)
                 print("Add new story")
             else:
-                print("This story is exist")
+                print(result)
 
 print("Done")
