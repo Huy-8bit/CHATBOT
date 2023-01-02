@@ -1,111 +1,163 @@
 {
-    "classes": [{
-        "key": ["bank", "tài khoản", "ngân hàng", "số tài khoản", "tên ngân hàng", "chi nhánh", "số điện thoại", "tên tài khoản", "ngân hàng", "vietcombank", "viettinbank", "agribank"],
-        "classes": ["bank"]
-    }, {
-        "key": ["coin", "tiền điện tử", "đồng tiền", "giá cả", "địa chỉ ví", "số tiền"],
-        "classes": ["coins"]
-    }],
-    "quection": [{
-            "key": ["khi nào", "thời gian", "bao lâu", "lúc nào", "bao giờ", "ngày"],
-            "type": ["time"]
+  "classes": [
+    {
+      "key": [
+        "bank",
+        "tài khoản",
+        "ngân hàng",
+        "số tài khoản",
+        "tên ngân hàng",
+        "chi nhánh",
+        "số điện thoại",
+        "tên tài khoản",
+        "ngân hàng",
+        "vietcombank",
+        "viettinbank",
+        "agribank",
+        "techcombank"
+      ],
+      "classes": ["bank"]
+    },
+    {
+      "key": [
+        "coin",
+        "tiền điện tử",
+        "đồng tiền",
+        "giá cả",
+        "địa chỉ ví",
+        "số tiền",
+        "bitcoin",
+        "ethereum",
+        "ripple",
+        "litecoin"
+      ],
+      "classes": ["coins"]
+    }
+  ],
+  "quection": [
+    {
+      "key": ["khi nào", "thời gian", "bao lâu", "lúc nào", "bao giờ", "ngày"],
+      "type": ["time"]
+    },
+    {
+      "key": ["địa điểm", "địa chỉ", "địa phương"],
+      "type": ["location"]
+    },
+    {
+      "key": ["ngày", "tuần", "tháng", "năm"],
+      "type": ["date"]
+    },
+    {
+      "key": ["giá", "chi phí", "tiền"],
+      "type": ["price"]
+    },
+    {
+      "key": ["tên", "tên gọi", "địa danh"],
+      "type": ["name"]
+    },
+    {
+      "key": ["thuộc tính", "tính năng", "đặc điểm", "độ bền"],
+      "type": ["attribute"]
+    }
+  ],
+  "table": [
+    {
+      "classes": "bank",
+      "data": [
+        {
+          "subject": "vietcombank",
+          "key": [
+            "bắt đầu làm việc",
+            "số điện thoại",
+            "địa chỉ",
+            "kết thúc làm việc",
+            "ngày làm việc"
+          ],
+          "responses": [
+            "8h30",
+            "1900 54 54 81",
+            "Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội",
+            "17h30",
+            "Thứ 2 - Thứ 6"
+          ]
         },
         {
-            "key": ["địa điểm", "địa chỉ", "địa phương"],
-            "type": ["location"]
+          "subject": "Vietinbank",
+          "key": [
+            "bắt đầu làm việc",
+            "số điện thoại",
+            "địa chỉ",
+            "kết thúc làm việc",
+            "ngày làm việc"
+          ],
+          "responses": [
+            "8h00",
+            "1900 6022",
+            "Số 2 Phạm Ngũ Lão, Quận 1, Hồ Chí Minh",
+            "17h00",
+            "Thứ 2 - Thứ 6"
+          ]
         },
         {
-            "key": ["ngày", "tuần", "tháng", "năm"],
-            "type": ["date"]
+          "subject": "techcombank",
+          "key": [
+            "bắt đầu làm việc",
+            "số điện thoại",
+            "địa chỉ",
+            "kết thúc làm việc",
+            "ngày làm việc"
+          ],
+          "responses": [
+            "8h30",
+            "1900 588 822",
+            "Số 1 Nguyễn Trãi, Quận 1, Hồ Chí Minh",
+            "17h30",
+            "Thứ 2 - Thứ 6"
+          ]
         },
         {
-            "key": ["giá", "chi phí", "tiền"],
-            "type": ["price"]
-        },
-        {
-            "key": ["tên", "tên gọi", "địa danh"],
-            "type": ["name"]
-        },
-        {
-            "key": ["thuộc tính", "tính năng", "đặc điểm", "độ bền"],
-            "type": ["attribute"]
+          "subject": "agribank",
+          "key": [
+            "bắt đầu làm việc",
+            "số điện thoại",
+            "địa chỉ",
+            "kết thúc làm việc",
+            "ngày làm việc"
+          ],
+          "responses": [
+            "8h00",
+            "1900 5455",
+            "Số 2 Nguyễn Thị Minh Khai, Quận 1, Hồ Chí Minh",
+            "17h00",
+            "Thứ 2 - Thứ 6"
+          ]
         }
-    ],
-    "table": [{
-            "classes": "bank",
-            "data": [{
-                    "subject": "Vietcombank",
-                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
-                    "responses": ["8h30",
-                        "1900 54 54 81",
-                        "Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội",
-                        "17h30", "Thứ 2 - Thứ 6"
-                    ]
-                },
-                {
-                    "subject": "Vietinbank",
-                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
-                    "responses": ["8h00",
-                        "1900 6022",
-                        "Số 2 Phạm Ngũ Lão, Quận 1, Hồ Chí Minh",
-                        "17h00", "Thứ 2 - Thứ 6"
-                    ]
-                },
-                {
-                    "subject": "Techcombank",
-                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
-                    "responses": ["8h30",
-                        "1900 588 822",
-                        "Số 1 Nguyễn Trãi, Quận 1, Hồ Chí Minh",
-                        "17h30", "Thứ 2 - Thứ 6"
-                    ]
-                },
-                {
-                    "subject": "Agribank",
-                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
-                    "responses": ["8h00",
-                        "1900 5455",
-                        "Số 2 Nguyễn Thị Minh Khai, Quận 1, Hồ Chí Minh",
-                        "17h00", "Thứ 2 - Thứ 6"
-                    ]
-                }
-            ]
+      ]
+    },
+    {
+      "classes": "coins",
+      "data": [
+        {
+          "subject": "bitcoin",
+          "key": ["giá", "sàn giao dịch", "đơn vị"],
+          "responses": ["$ 8.000", "https://www.bitstamp.net/", "BTC"]
         },
         {
-            "classes": "coins",
-            "data": [{
-                    "subject": "Bitcoin",
-                    "key": ["giá", "sàn giao dịch", "đơn vị"],
-                    "responses": ["$ 8.000",
-                        "https://www.bitstamp.net/",
-                        "BTC"
-                    ]
-                },
-                {
-                    "subject": "Ethereum",
-                    "key": ["giá", "sàn giao dịch", "đơn vị"],
-                    "responses": ["$ 200",
-                        "https://www.bitstamp.net/",
-                        "ETH"
-                    ]
-                },
-                {
-                    "subject": "Ripple",
-                    "key": ["giá", "sàn giao dịch", "đơn vị"],
-                    "responses": ["$ 0.3",
-                        "https://www.bitstamp.net/",
-                        "XRP"
-                    ]
-                },
-                {
-                    "subject": "Litecoin",
-                    "key": ["giá", "sàn giao dịch", "đơn vị"],
-                    "responses": ["$ 50",
-                        "https://www.bitstamp.net/",
-                        "LTC"
-                    ]
-                }
-            ]
+          "subject": "ethereum",
+          "key": ["giá", "sàn giao dịch", "đơn vị"],
+          "responses": ["$ 200", "https://www.bitstamp.net/", "ETH"]
+        },
+        {
+          "subject": "ripple",
+          "key": ["giá", "sàn giao dịch", "đơn vị"],
+          "responses": ["$ 0.3", "https://www.bitstamp.net/", "XRP"]
+        },
+        {
+          "subject": "litecoin",
+          "key": ["giá", "sàn giao dịch", "đơn vị"],
+          "responses": ["$ 50", "https://www.bitstamp.net/", "LTC"]
         }
-    ]
+      ]
+    }
+  ]
 }

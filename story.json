@@ -43,10 +43,10 @@
             "tag": "greeting",
             "story": [{
                     "patterns": ["xin chào"],
-                    "responses": ["rất vui được gặp bạn"]
+                    "responses": ["rất vui được gặp bạn", "chào bạn"]
                 },
                 {
-                    "patterns": ["chào", "chào bạn"],
+                    "patterns": ["chào"],
                     "responses": ["chào bạn"]
                 },
                 {
