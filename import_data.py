@@ -68,7 +68,3 @@ def get_text(input_text):
         print("Bot: " , result)
     
     return result
-
-
-
-

@@ -1,0 +1,66 @@
+{
+    "data": [{
+            "tag": "question",
+            "story": [{
+                    "patterns": [
+                        "khi nào mở cửa ngân hàng?",
+                        "khi nào ngân hàng hoạt động?"
+                    ],
+                    "responses": [
+                        "ngân hàng mở cửa từ 8h sáng đến 17h chiều từ thứ 2 đến thứ 6. ngân hàng đóng cửa vào thứ 7 và chủ nhật."
+                    ]
+                },
+                {
+                    "patterns": [
+                        "tôi muốn hỏi về giá cả của sản phẩm?",
+                        "sản phẩm này bao nhiêu tiền?"
+                    ],
+                    "responses": ["giá cả của sản phẩm này là xxx đồng."]
+                },
+                {
+                    "patterns": [
+                        "tôi muốn hỏi về địa điểm của cửa hàng?",
+                        "cửa hàng này ở đâu?"
+                    ],
+                    "responses": ["cửa hàng này nằm tại địa chỉ xxx."]
+                },
+                {
+                    "patterns": [
+                        "tôi muốn hỏi về cách sử dụng sản phẩm?",
+                        "làm sao sử dụng sản phẩm này?"
+                    ],
+                    "responses": [
+                        "để sử dụng sản phẩm này, bạn cần thực hiện các bước sau: xxx."
+                    ]
+                },
+                {
+                    "patterns": ["giá vàng hôm nay?"],
+                    "responses": ["50 triệu 1 cây vàng"]
+                }
+            ]
+        },
+        {
+            "tag": "greeting",
+            "story": [{
+                    "patterns": ["xin chào"],
+                    "responses": ["rất vui được gặp bạn", "chào bạn"]
+                },
+                {
+                    "patterns": ["chào"],
+                    "responses": ["chào bạn"]
+                },
+                {
+                    "patterns": ["bạn khỏe không"],
+                    "responses": ["rất khỏe nha bạn"]
+                }
+            ]
+        },
+        {
+            "tag": "joke",
+            "story": [{
+                "patterns": ["hôm nay ăn gì"],
+                "responses": ["ăn cơm tấm"]
+            }]
+        }
+    ]
+}

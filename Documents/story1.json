@@ -68,16 +68,16 @@
             "story": [{
                     "patterns": [
                         "xin chào",
-                        "chào bạn"
+                        "xin chào"
                     ],
                     "responses": [
-                        "rất vui được gặp bạn",
-                        "chào bạn"
+                        "rất vui được gặp bạn"
                     ]
                 },
                 {
                     "patterns": [
-                        "chào"
+                        "chào",
+                        "chào bạn"
                     ],
                     "responses": [
                         "chào bạn"

@@ -29,14 +29,16 @@ def find_responses(messages_input, data):
     subject = []
     for value in data[0]:
         if value['subject'] in messages_input:
+            subject = value['subject']
             for keys in value['key']:
                 if keys in messages_input:
                     key.append(keys)
                     index = value['key'].index(keys)
                     response.append(value['responses'][index])
-                    subject = value['subject']
     if response == []:
         response = ["chưa có thông tin"]
+    if key == []:
+        key = ["chưa có thông tin"]
     return response, key, subject
 
 
@@ -95,9 +97,9 @@ def process_message_question(messages_input, data):
 
 
 def test():
-    # messages_input = input("user: ")
-    # messages_input = messages_input.lower()
-    messages_input = "khi nào bắt đầu làm việc vietcombank?"
+    messages_input = input("user: ")
+    messages_input = messages_input.lower()
+
     print("messages_input: ", messages_input)
     classify = sentence_classification.analysis_message(messages_input)
     print("classify: ", classify[0])
@@ -109,5 +111,5 @@ def test():
     print("")
     print("bot: ", result)
 
-
-test()
+while True:
+    test()
