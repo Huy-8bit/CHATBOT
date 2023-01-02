@@ -1,206 +1,213 @@
 {
-  "classes": [
-    {
-      "key": [
-        "bank",
-        "tài khoản",
-        "ngân hàng",
-        "số tài khoản",
-        "tên ngân hàng",
-        "chi nhánh",
-        "số điện thoại",
-        "tên tài khoản",
-        "ngân hàng",
-        "vietcombank",
-        "viettinbank",
-        "agribank",
-        "techcombank"
-      ],
-      "classes": ["bank"]
-    },
-    {
-      "key": [
-        "coin",
-        "tiền điện tử",
-        "đồng tiền",
-        "giá cả",
-        "địa chỉ ví",
-        "số tiền",
-        "bitcoin",
-        "ethereum",
-        "ripple",
-        "litecoin"
-      ],
-      "classes": ["coins"]
-    },
-    {
-      "key": [
-        "cổ phiếu",
-        "dividend",
-        "lợi nhuận từ việc bán cổ phiếu",
-        "thị trường chứng khoán",
-        "đại lý môi giới",
-        "danh mục cổ phiếu",
-        "giao dịch",
-        "sàn chứng khoán",
-        "sàn giao dịch chứng khoán",
-        "vốn hóa thị trường",
-        "đợt phát hành cổ phiếu đầu tư (IPO)",
-        "chỉ số chứng khoán",
-        "thị trường giảm giá",
-        "thị trường tăng giá"
-      ],
-      "classes": ["stock"]
-    }
-  ],
-  "quection": [
-    {
-      "key": ["khi nào", "thời gian", "bao lâu", "lúc nào", "bao giờ", "ngày"],
-      "type": ["time"]
-    },
-    {
-      "key": ["địa điểm", "địa chỉ", "địa phương"],
-      "type": ["location"]
-    },
-    {
-      "key": ["ngày", "tuần", "tháng", "năm"],
-      "type": ["date"]
-    },
-    {
-      "key": ["giá", "chi phí", "tiền"],
-      "type": ["price"]
-    },
-    {
-      "key": ["tên", "tên gọi", "địa danh"],
-      "type": ["name"]
-    },
-    {
-      "key": ["thuộc tính", "tính năng", "đặc điểm", "độ bền"],
-      "type": ["attribute"]
-    }
-  ],
-  "table": [
-    {
-      "classes": "bank",
-      "data": [
-        {
-          "subject": "vietcombank",
-          "key": [
-            "bắt đầu làm việc",
-            "số điện thoại",
-            "địa chỉ",
-            "kết thúc làm việc",
-            "ngày làm việc"
-          ],
-          "responses": [
-            "8h30",
-            "1900 54 54 81",
-            "Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội",
-            "17h30",
-            "Thứ 2 - Thứ 6"
-          ]
+    "classes": [{
+            "key": [
+                "bank",
+                "tài khoản",
+                "ngân hàng",
+                "số tài khoản",
+                "tên ngân hàng",
+                "chi nhánh",
+                "số điện thoại",
+                "tên tài khoản",
+                "ngân hàng",
+                "vietcombank",
+                "viettinbank",
+                "agribank",
+                "techcombank"
+            ],
+            "classes": ["bank"]
         },
         {
-          "subject": "Vietinbank",
-          "key": [
-            "bắt đầu làm việc",
-            "số điện thoại",
-            "địa chỉ",
-            "kết thúc làm việc",
-            "ngày làm việc"
-          ],
-          "responses": [
-            "8h00",
-            "1900 6022",
-            "Số 2 Phạm Ngũ Lão, Quận 1, Hồ Chí Minh",
-            "17h00",
-            "Thứ 2 - Thứ 6"
-          ]
+            "key": [
+                "coin",
+                "tiền điện tử",
+                "đồng tiền",
+                "giá cả",
+                "địa chỉ ví",
+                "số tiền",
+                "bitcoin",
+                "ethereum",
+                "ripple",
+                "litecoin"
+            ],
+            "classes": ["coins"]
         },
         {
-          "subject": "techcombank",
-          "key": [
-            "bắt đầu làm việc",
-            "số điện thoại",
-            "địa chỉ",
-            "kết thúc làm việc",
-            "ngày làm việc"
-          ],
-          "responses": [
-            "8h30",
-            "1900 588 822",
-            "Số 1 Nguyễn Trãi, Quận 1, Hồ Chí Minh",
-            "17h30",
-            "Thứ 2 - Thứ 6"
-          ]
-        },
-        {
-          "subject": "agribank",
-          "key": [
-            "bắt đầu làm việc",
-            "số điện thoại",
-            "địa chỉ",
-            "kết thúc làm việc",
-            "ngày làm việc"
-          ],
-          "responses": [
-            "8h00",
-            "1900 5455",
-            "Số 2 Nguyễn Thị Minh Khai, Quận 1, Hồ Chí Minh",
-            "17h00",
-            "Thứ 2 - Thứ 6"
-          ]
+            "key": [
+                "cổ phiếu",
+                "dividend",
+                "lợi nhuận từ việc bán cổ phiếu",
+                "thị trường chứng khoán",
+                "đại lý môi giới",
+                "danh mục cổ phiếu",
+                "giao dịch",
+                "sàn chứng khoán",
+                "sàn giao dịch chứng khoán",
+                "vốn hóa thị trường",
+                "đợt phát hành cổ phiếu đầu tư (IPO)",
+                "chỉ số chứng khoán",
+                "thị trường giảm giá",
+                "thị trường tăng giá"
+            ],
+            "classes": ["stock"]
         }
-      ]
-    },
-    {
-      "classes": "coins",
-      "data": [
-        {
-          "subject": "bitcoin",
-          "key": ["giá", "sàn giao dịch", "đơn vị"],
-          "responses": ["$ 8.000", "https://www.bitstamp.net/", "BTC"]
+    ],
+    "quection": [{
+            "key": ["khi nào", "thời gian", "bao lâu", "lúc nào", "bao giờ", "ngày"],
+            "type": ["time"]
         },
         {
-          "subject": "ethereum",
-          "key": ["giá", "sàn giao dịch", "đơn vị"],
-          "responses": ["$ 200", "https://www.bitstamp.net/", "ETH"]
+            "key": ["địa điểm", "địa chỉ", "địa phương"],
+            "type": ["location"]
         },
         {
-          "subject": "ripple",
-          "key": ["giá", "sàn giao dịch", "đơn vị"],
-          "responses": ["$ 0.3", "https://www.bitstamp.net/", "XRP"]
+            "key": ["ngày", "tuần", "tháng", "năm"],
+            "type": ["date"]
         },
         {
-          "subject": "litecoin",
-          "key": ["giá", "sàn giao dịch", "đơn vị"],
-          "responses": ["$ 50", "https://www.bitstamp.net/", "LTC"]
+            "key": ["giá", "chi phí", "tiền"],
+            "type": ["price"]
+        },
+        {
+            "key": ["tên", "tên gọi", "địa danh"],
+            "type": ["name"]
+        },
+        {
+            "key": ["thuộc tính", "tính năng", "đặc điểm", "độ bền"],
+            "type": ["attribute"]
         }
-      ]
-    },
-    {
-      "classes": "stock",
-      "data": [
+    ],
+    "table": [{
+            "classes": "bank",
+            "data": [{
+                    "subject": "vietcombank",
+                    "key": [
+                        "bắt đầu làm việc",
+                        "số điện thoại",
+                        "địa chỉ",
+                        "kết thúc làm việc",
+                        "ngày làm việc"
+                    ],
+                    "responses": [
+                        "8h30",
+                        "1900 54 54 81",
+                        "Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội",
+                        "17h30",
+                        "Thứ 2 - Thứ 6"
+                    ]
+                },
+                {
+                    "subject": "Vietinbank",
+                    "key": [
+                        "bắt đầu làm việc",
+                        "số điện thoại",
+                        "địa chỉ",
+                        "kết thúc làm việc",
+                        "ngày làm việc"
+                    ],
+                    "responses": [
+                        "8h00",
+                        "1900 6022",
+                        "Số 2 Phạm Ngũ Lão, Quận 1, Hồ Chí Minh",
+                        "17h00",
+                        "Thứ 2 - Thứ 6"
+                    ]
+                },
+                {
+                    "subject": "techcombank",
+                    "key": [
+                        "bắt đầu làm việc",
+                        "số điện thoại",
+                        "địa chỉ",
+                        "kết thúc làm việc",
+                        "ngày làm việc"
+                    ],
+                    "responses": [
+                        "8h30",
+                        "1900 588 822",
+                        "Số 1 Nguyễn Trãi, Quận 1, Hồ Chí Minh",
+                        "17h30",
+                        "Thứ 2 - Thứ 6"
+                    ]
+                },
+                {
+                    "subject": "agribank",
+                    "key": [
+                        "bắt đầu làm việc",
+                        "số điện thoại",
+                        "địa chỉ",
+                        "kết thúc làm việc",
+                        "ngày làm việc"
+                    ],
+                    "responses": [
+                        "8h00",
+                        "1900 5455",
+                        "Số 2 Nguyễn Thị Minh Khai, Quận 1, Hồ Chí Minh",
+                        "17h00",
+                        "Thứ 2 - Thứ 6"
+                    ]
+                }
+            ]
+        },
         {
-          "subject": "bibica",
-          "key": [
-            "giá",
-            "sàn giao dịch",
-            "mã chứng khoán",
-            "EPS",
-            "PE",
-            "ROE & ROA",
-            "ROA",
-            "P/B",
-            "beta",
-            "hệ số thanh khoản",
-            "chỉ số nợ D/E",
-            "cổ tức",
-            "đáy cổ phiếu"
-          ],
-          "responses": ["$ 8.000", "https://www.bitstamp.net/", "BTC", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
+            "classes": "coins",
+            "data": [{
+                    "subject": "bitcoin",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 8.000", "https://www.bitstamp.net/", "BTC"]
+                },
+                {
+                    "subject": "ethereum",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 200", "https://www.bitstamp.net/", "ETH"]
+                },
+                {
+                    "subject": "ripple",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 0.3", "https://www.bitstamp.net/", "XRP"]
+                },
+                {
+                    "subject": "litecoin",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 50", "https://www.bitstamp.net/", "LTC"]
+                }
+            ]
+        },
+        {
+            "classes": "stock",
+            "data": [{
+                "subject": "bibica",
+                "key": [
+                    "giá",
+                    "sàn giao dịch",
+                    "mã chứng khoán",
+                    "EPS",
+                    "PE",
+                    "ROE & ROA",
+                    "ROA",
+                    "P/B",
+                    "beta",
+                    "hệ số thanh khoản",
+                    "chỉ số nợ D/E",
+                    "cổ tức",
+                    "đáy cổ phiếu"
+                ],
+                "responses": [
+                    "$ 8.000",
+                    "https://www.bitstamp.net/",
+                    "BTC",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1",
+                    "1"
+                ]
+            }]
         }
-      ]
-    }
-  ]
+    ]
 }

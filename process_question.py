@@ -29,13 +29,14 @@ def find_responses(messages_input, data):
     subject = []
     for value in data[0]:
         if value['subject'] in messages_input:
-            print("value: ", value)
             for keys in value['key']:
                 if keys in messages_input:
                     key.append(keys)
                     index = value['key'].index(keys)
                     response.append(value['responses'][index])
                     subject = value['subject']
+    if response == []:
+        response = ["chưa có thông tin"]
     return response, key, subject
 
 
@@ -44,19 +45,18 @@ def build_answer(messages_input, data, classes, type):
     messages = get_structure(messages_input)
     new_data = []
     response, key, subject = [], [], []
-    answer = "chưa hiểu câu hỏi của bạn!"
+    answer = ""
     for value in data['table']:
         if classes in value['classes']:
             new_data.append(value['data'])
             response, key, subject = find_responses(messages_input, new_data)
-            answer = ""
             for i in range(0, len(response) - 1):
-                answer += key[i] + " của " + subject + \
-                    " là " + response[i] + ", "
-            answer += key[len(response) - 1] + " của " + \
-                subject + " là " + response[len(response) - 1]
+                answer += key[i] + " của " + subject + " là " + response[i] + ", "
+                
+            answer += key[len(response) - 1] + " của " + subject + " là " + response[len(response) - 1]
             return answer
 
+    answer = "chưa hiểu câu hỏi của bạn!"
     return answer
 
 
@@ -95,9 +95,9 @@ def process_message_question(messages_input, data):
 
 
 def test():
-    messages_input = input("user: ")
-    messages_input = messages_input.lower()
-    # messages_input = "khi nào mở cửa ngân hàng?"
+    # messages_input = input("user: ")
+    # messages_input = messages_input.lower()
+    messages_input = "khi nào bắt đầu làm việc vietcombank?"
     print("messages_input: ", messages_input)
     classify = sentence_classification.analysis_message(messages_input)
     print("classify: ", classify[0])
