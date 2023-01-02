@@ -1,6 +1,6 @@
 {
     "classes": [{
-        "key": ["bank", "tài khoản", "ngân hàng", "số tài khoản", "tên ngân hàng", "chi nhánh", "số điện thoại", "tên tài khoản"],
+        "key": ["bank", "tài khoản", "ngân hàng", "số tài khoản", "tên ngân hàng", "chi nhánh", "số điện thoại", "tên tài khoản", "ngân hàng", "vietcombank", "viettinbank", "agribank"],
         "classes": ["bank"]
     }, {
         "key": ["coin", "tiền điện tử", "đồng tiền", "giá cả", "địa chỉ ví", "số tiền"],
@@ -31,29 +31,81 @@
             "type": ["attribute"]
         }
     ],
-    "data": [{
+    "table": [{
             "classes": "bank",
-            "patterns": ["vietcombank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
-            "responses": ["success", "8h30", "17h30", "Số 1, Đường 3/2, Phường 12, Quận 10, Tp. Hồ Chí Minh", "028 38 222 222"]
-        }, {
-            "classes": "bank",
-            "patterns": ["techcombank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
-            "responses": ["success", "8h00", "17h00", "Số 2, Đường 3/2, Phường 14, Quận 10, Tp. Hồ Chí Minh", "028 38 111 111"]
+            "data": [{
+                    "subject": "Vietcombank",
+                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
+                    "responses": ["8h30",
+                        "1900 54 54 81",
+                        "Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội",
+                        "17h30", "Thứ 2 - Thứ 6"
+                    ]
+                },
+                {
+                    "subject": "Vietinbank",
+                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
+                    "responses": ["8h00",
+                        "1900 6022",
+                        "Số 2 Phạm Ngũ Lão, Quận 1, Hồ Chí Minh",
+                        "17h00", "Thứ 2 - Thứ 6"
+                    ]
+                },
+                {
+                    "subject": "Techcombank",
+                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
+                    "responses": ["8h30",
+                        "1900 588 822",
+                        "Số 1 Nguyễn Trãi, Quận 1, Hồ Chí Minh",
+                        "17h30", "Thứ 2 - Thứ 6"
+                    ]
+                },
+                {
+                    "subject": "Agribank",
+                    "key": ["bắt đầu làm việc", "số điện thoại", "địa chỉ", "kết thúc làm việc", "ngày làm việc"],
+                    "responses": ["8h00",
+                        "1900 5455",
+                        "Số 2 Nguyễn Thị Minh Khai, Quận 1, Hồ Chí Minh",
+                        "17h00", "Thứ 2 - Thứ 6"
+                    ]
+                }
+            ]
         },
         {
-            "classes": "bank",
-            "patterns": ["vpbank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
-            "responses": ["success", "8h00", "17h00", "Số 3, Đường 4/2, Phường 15, Quận 11, Tp. Hồ Chí Minh", "028 38 555 555"]
-        },
-        {
-            "classes": "bank",
-            "patterns": ["agribank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
-            "responses": ["success", "8h00", "17h00", "Số 4, Đường 3/2, Phường 12, Quận 10, Tp. Hồ Chí Minh", "028 38 777 777"]
-        },
-        {
-            "classes": "bank",
-            "patterns": ["mbbank", "bắt đầu", "kết thúc", "địa chỉ", "số điện thoại"],
-            "responses": ["success", "8h30", "17h30", "Số 5, Đường 4/2, Phường 13, Quận 11, Tp. Hồ Chí Minh", "028 38 333 333"]
+            "classes": "coins",
+            "data": [{
+                    "subject": "Bitcoin",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 8.000",
+                        "https://www.bitstamp.net/",
+                        "BTC"
+                    ]
+                },
+                {
+                    "subject": "Ethereum",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 200",
+                        "https://www.bitstamp.net/",
+                        "ETH"
+                    ]
+                },
+                {
+                    "subject": "Ripple",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 0.3",
+                        "https://www.bitstamp.net/",
+                        "XRP"
+                    ]
+                },
+                {
+                    "subject": "Litecoin",
+                    "key": ["giá", "sàn giao dịch", "đơn vị"],
+                    "responses": ["$ 50",
+                        "https://www.bitstamp.net/",
+                        "LTC"
+                    ]
+                }
+            ]
         }
     ]
 }
