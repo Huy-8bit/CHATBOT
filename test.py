@@ -22,15 +22,10 @@ while True:
     docs = messages_ref.order_by('timestamp').stream()
     for doc in docs:
         data = doc.to_dict()
-        print(f"ID: {doc.id}")
-        print(f"Received: {data['received']}")
-        print(f"Text: {data['text']}")
-        print(f"Timestamp: {data['timestamp']}")
-    
-# print message last update
-    # print(f"Last message: {data['text']}")    
-# if the last message have received = True, then send message to firebase
-
+        print(f"id: {doc.id}")
+        print(f"text: {data['text']}")
+        print(f"received: {data['received']}")
+        print(f"timestamp: {data['timestamp']}")
     if data['received'] == True:
     # create a new message
         new_message = {
