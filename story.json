@@ -127,7 +127,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền tệ hiện tại là bao nhiêu?"
+                        "giá tiền tệ hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 tệ bằng 23.000 vnđ tính theo thời giá hiện tại"
@@ -143,7 +143,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền đô hiện tại là bao nhiêu?"
+                        "giá tiền đô hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 đô bằng 23.000 vnđ tính theo thời giá hiện tại"
@@ -151,7 +151,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền eur hiện tại là bao nhiêu?"
+                        "giá tiền eur hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 eur bằng 25.000 vnđ tính theo thời giá hiện tại"
@@ -159,7 +159,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền aud hiện tại là bao nhiêu?"
+                        "giá tiền aud hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 aud bằng 15.000 vnđ tính theo thời giá hiện tại"
@@ -167,7 +167,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền sgd hiện tại là bao nhiêu?"
+                        "giá tiền sgd hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 sdg bằng 17.000 vnđ tính theo thời giá hiện tại"
@@ -175,7 +175,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền bath hiện tại là bao nhiêu?"
+                        "giá tiền bath hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 bath bằng 681 vnđ tính theo thời giá hiện tại"
@@ -487,7 +487,7 @@
             "tag": "",
             "story": [{
                     "patterns": [
-                        "Giá tiền yên hiện tại là bao nhiêu?"
+                        "giá tiền yên hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 yên bằng 17.000 vnđ tính theo thời giá hiện tại"
@@ -503,7 +503,7 @@
                 },
                 {
                     "patterns": [
-                        "Giá tiền rub hiện tại là bao nhiêu?"
+                        "giá tiền rub hiện tại là bao nhiêu?"
                     ],
                     "responses": [
                         "1 rub bằng 332 vnđ tính theo thời giá hiện tại"

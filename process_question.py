@@ -11,19 +11,9 @@ def get_structure(messages_input):
     return result
 
 
-def check_story(messages_input, classify):
-    data = sentence_classification.load_data('story.json')
-    for value in data['data']:
-        if classify in value['tag']:
-            for result in value['story']:
-                if messages_input in result['patterns']:
-                    return result['responses'][0]
-    print("Not found in story")
-    return "NULL"
 
 
 def find_responses(messages_input, data):
-    print("Finding responses")
     key = []
     response = []
     subject = []
@@ -35,15 +25,10 @@ def find_responses(messages_input, data):
                     key.append(keys)
                     index = value['key'].index(keys)
                     response.append(value['responses'][index])
-    if response == []:
-        response = ["chưa có thông tin"]
-    if key == []:
-        key = ["chưa có thông tin"]
     return response, key, subject
 
 
 def build_answer(messages_input, data, classes, type):
-    print("Building answer")
     messages = get_structure(messages_input)
     new_data = []
     response, key, subject = [], [], []
@@ -52,22 +37,17 @@ def build_answer(messages_input, data, classes, type):
         if classes in value['classes']:
             new_data.append(value['data'])
             response, key, subject = find_responses(messages_input, new_data)
-            for i in range(0, len(response) - 1):
-                answer += key[i] + " của " + subject + " là " + response[i] + ", "
-                
-            answer += key[len(response) - 1] + " của " + subject + " là " + response[len(response) - 1]
-            return answer
-
-    answer = "chưa hiểu câu hỏi của bạn!"
+            if response != [] and key != []:    
+                for i in range(0, len(response) - 1):
+                    answer += key[i] + " của " + subject + " là " + response[i] + ", "
+                answer += key[len(response) - 1] + " của " + subject + " là " + response[len(response) - 1]
+                return answer
+    answer = "Tôi chưa hiểu đúng câu hỏi của bạn :< "
     return answer
 
 
 def get_important_key(messages_input, data):
-    print("")
-    print("Getting important key")
     stuct_message = get_structure(messages_input)
-    print("struct: ", stuct_message)
-    print("")
     classes = "NULL"
     type = "NULL"
     for word in stuct_message:
@@ -85,8 +65,7 @@ def get_important_key(messages_input, data):
 
 def process_message_question(messages_input, data):
     # Get the answer to the question
-    print("")
-    print("Processing question")
+
     classes, type = get_important_key(messages_input, data)
     if classes != "NULL" or type != "NULL":
 
@@ -96,20 +75,8 @@ def process_message_question(messages_input, data):
         return "Chưa biết trả lời câu hỏi này!!!"
 
 
-def test():
-    messages_input = input("user: ")
+def question(messages_input):
     messages_input = messages_input.lower()
-
-    print("messages_input: ", messages_input)
-    classify = sentence_classification.analysis_message(messages_input)
-    print("classify: ", classify[0])
-    print("")
-    result = check_story(messages_input, classify[0])
-    if result == "NULL":
-        data = sentence_classification.load_data('question.json')
-        result = process_message_question(messages_input, data)
-    print("")
-    print("bot: ", result)
-
-while True:
-    test()
+    data = sentence_classification.load_data('question.json')
+    result = process_message_question(messages_input, data)
+    return result
