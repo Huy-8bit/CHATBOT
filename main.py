@@ -37,11 +37,11 @@ def get_text(input_text):
         
 def submit():
     input_text = input_entry.get() # get the input text from the Entry widget
-    output_text = get_text(input_text) # get the output text from the get_text function
+    output_text = get_message.get_messge(input_text) # get the output text from the get_text function
     # if output_text == "NULL":
     #     create_new_display(input_text)
     # else:
-    #     output_label.configure(text="BOT: " + output_text)
+    output_label.configure(text="BOT: " + output_text)
         
 # create the main window
 root = tk.Tk()
