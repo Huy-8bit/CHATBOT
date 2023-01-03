@@ -3,7 +3,7 @@
 import sentence_classification
 import process_question
 import check_story
-from underthesea import text_normalize
+# from underthesea import text_normalize
 
 def get_message_process(messages_input):
     classify = sentence_classification.analysis_message(messages_input)
@@ -16,11 +16,12 @@ def get_message_process(messages_input):
 
 
 def main():
+
     while True:
         # print(intents)
         print("Bạn: ", end="")
         messages_input = " " + input()
-        messages_input = text_normalize(messages_input)
+        #messages_input = text_normalize(messages_input)
         if 'quit' in messages_input:
             break
         else:
