@@ -180,6 +180,127 @@
                     "responses": [
                         "1 bath bằng 681 vnđ tính theo thời giá hiện tại"
                     ]
+                },
+                {
+                    "patterns": [
+                        "giá tiền yên hiện tại là bao nhiêu?"
+                    ],
+                    "responses": [
+                        "1 yên bằng 17.000 vnđ tính theo thời giá hiện tại"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Lưu trữ BTC ở đâu?"
+                    ],
+                    "responses": [
+                        "Lưu giữ trên ví Bitcoin"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "giá tiền rub hiện tại là bao nhiêu?"
+                    ],
+                    "responses": [
+                        "1 rub bằng 332 vnđ tính theo thời giá hiện tại"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Bitcoin là gì?"
+                    ],
+                    "responses": [
+                        "Bitcoin là một loại tiền tệ kỹ thuật số được phát hành dưới dạng phần mềm mã nguồn mở và phát minh bởi Satoshi Nakamoto. Đây cũng chính là đồng tiền điện tử đầu tiên trên thế giới, đặt nền móng cho sự phát triển của thị trường crypto."
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Bitcoin có lừa đảo không?"
+                    ],
+                    "responses": [
+                        "Bitcoin không lừa đảo 100%.Nếu có chỉ có người lừa bạn thôi"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Bitcoin có lhợp pháp không?",
+                        "Bitcoin có hợp pháp không?"
+                    ],
+                    "responses": [
+                        "ở Việt Nam chưa có thông báo chính thức được sử dụng đồng Bitcoin một cách hợp pháp. Chính vì vậy, đừng bao giờ dại dột mà mang Bitcoin đi thanh toán khi mua hàng nhé!"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Bitcoin hoạt động như thế nào?"
+                    ],
+                    "responses": [
+                        "Dựa trên công nghệ BlockChain và công nghệ phân nhánh"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Tổng số đồng Bitcoin được tạo ra là bao nhiêu?"
+                    ],
+                    "responses": [
+                        "Tổng số Bitcoin đã được tạo ra là 21,000,000 đồng BTC"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Đơn vị của Bitcoin là bao nhiêu?"
+                    ],
+                    "responses": [
+                        "Với tỷ lệ 1 BTC = 100,000,000 Satoshi. \n\nTức một đơn vị Satoshi = 0.00000001 BTC."
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Mỗi ví Bitcoin gồm những gì?"
+                    ],
+                    "responses": [
+                        "Một ví Bitcoin sẽ gồm địa chỉ công khai, và một khoá riêng tư"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Có rủi ro khi đầu tư Bitcoin không?"
+                    ],
+                    "responses": [
+                        "Đã đầu tư thì anh em phải chấp nhận rủi ro, và đây là một lĩnh vực cần những người đủ dũng cảm và dám mạo hiểm thì mới tìm được đến thành công."
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Có trang nào uy tín để cật nhật thông tin Bitcoin không?"
+                    ],
+                    "responses": [
+                        "Cập nhật tin tức nhanh nhất: Telegram, Twitter, Facebook.\nCập nhật thông tin thị trường: Coindesk, Congecko, Coinmarketcap.\nCung cấp thông tin nghiên cứu chuyên sâu: Coin98 Insights, Messari, The Block, Dephi Digital, Medium, Binance Research."
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Bao nhiêu hình thức đào Bitcoin?"
+                    ],
+                    "responses": [
+                        "Đào Bitcoin , Mua và nắm giữ Bitcoin, Trade"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "Mua Bitcoin ở đâu?"
+                    ],
+                    "responses": [
+                        "Giao dịch thông qua ATM , Giao dịch thông qua sàn giao dịch"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "quỳnh hương có xinh không"
+                    ],
+                    "responses": [
+                        "Quỳnh Hương rất xinhhhh nhaaaa <3"
+                    ]
                 }
             ]
         },
@@ -255,7 +376,7 @@
                 },
                 {
                     "patterns": [
-                        "Bạn khoẻ không?"
+                        "bạn khoẻ không?"
                     ],
                     "responses": [
                         "Cám ơn tôi ỔN"
@@ -299,14 +420,6 @@
                 },
                 {
                     "patterns": [
-                        "bạn ơi"
-                    ],
-                    "responses": [
-                        "ơi bạn"
-                    ]
-                },
-                {
-                    "patterns": [
                         "bạn biết hát không?"
                     ],
                     "responses": [
@@ -315,7 +428,16 @@
                 },
                 {
                     "patterns": [
-                        "Bạn có bồ chưa?"
+                        "bạn ơi"
+                    ],
+                    "responses": [
+                        "ơi bạn"
+                    ]
+                },
+
+                {
+                    "patterns": [
+                        "Bạn có bồ chưa"
                     ],
                     "responses": [
                         "CHƯA"
@@ -479,127 +601,6 @@
                     ],
                     "responses": [
                         "số dư là tổng số tiền bạn đang có trong tài khoản ngân hàng. số dư của bạn phải trên 50.000 mới có thể thực hiện giao dịch"
-                    ]
-                }
-            ]
-        },
-        {
-            "tag": "",
-            "story": [{
-                    "patterns": [
-                        "giá tiền yên hiện tại là bao nhiêu?"
-                    ],
-                    "responses": [
-                        "1 yên bằng 17.000 vnđ tính theo thời giá hiện tại"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Lưu trữ BTC ở đâu?"
-                    ],
-                    "responses": [
-                        "Lưu giữ trên ví Bitcoin"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "giá tiền rub hiện tại là bao nhiêu?"
-                    ],
-                    "responses": [
-                        "1 rub bằng 332 vnđ tính theo thời giá hiện tại"
-                    ]
-                }
-            ]
-        },
-        {
-            "tag": "Coin",
-            "story": [{
-                    "patterns": [
-                        "Bitcoin là gì?"
-                    ],
-                    "responses": [
-                        "Bitcoin là một loại tiền tệ kỹ thuật số được phát hành dưới dạng phần mềm mã nguồn mở và phát minh bởi Satoshi Nakamoto. Đây cũng chính là đồng tiền điện tử đầu tiên trên thế giới, đặt nền móng cho sự phát triển của thị trường crypto."
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Bitcoin có lừa đảo không?"
-                    ],
-                    "responses": [
-                        "Bitcoin không lừa đảo 100%.Nếu có chỉ có người lừa bạn thôi"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Bitcoin có lhợp pháp không?",
-                        "Bitcoin có hợp pháp không?"
-                    ],
-                    "responses": [
-                        "ở Việt Nam chưa có thông báo chính thức được sử dụng đồng Bitcoin một cách hợp pháp. Chính vì vậy, đừng bao giờ dại dột mà mang Bitcoin đi thanh toán khi mua hàng nhé!"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Bitcoin hoạt động như thế nào?"
-                    ],
-                    "responses": [
-                        "Dựa trên công nghệ BlockChain và công nghệ phân nhánh"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Tổng số đồng Bitcoin được tạo ra là bao nhiêu?"
-                    ],
-                    "responses": [
-                        "Tổng số Bitcoin đã được tạo ra là 21,000,000 đồng BTC"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Đơn vị của Bitcoin là bao nhiêu?"
-                    ],
-                    "responses": [
-                        "Với tỷ lệ 1 BTC = 100,000,000 Satoshi. \n\nTức một đơn vị Satoshi = 0.00000001 BTC."
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Mỗi ví Bitcoin gồm những gì?"
-                    ],
-                    "responses": [
-                        "Một ví Bitcoin sẽ gồm địa chỉ công khai, và một khoá riêng tư"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Có rủi ro khi đầu tư Bitcoin không?"
-                    ],
-                    "responses": [
-                        "Đã đầu tư thì anh em phải chấp nhận rủi ro, và đây là một lĩnh vực cần những người đủ dũng cảm và dám mạo hiểm thì mới tìm được đến thành công."
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Có trang nào uy tín để cật nhật thông tin Bitcoin không?"
-                    ],
-                    "responses": [
-                        "Cập nhật tin tức nhanh nhất: Telegram, Twitter, Facebook.\nCập nhật thông tin thị trường: Coindesk, Congecko, Coinmarketcap.\nCung cấp thông tin nghiên cứu chuyên sâu: Coin98 Insights, Messari, The Block, Dephi Digital, Medium, Binance Research."
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Bao nhiêu hình thức đào Bitcoin?"
-                    ],
-                    "responses": [
-                        "Đào Bitcoin , Mua và nắm giữ Bitcoin, Trade"
-                    ]
-                },
-                {
-                    "patterns": [
-                        "Mua Bitcoin ở đâu?"
-                    ],
-                    "responses": [
-                        "Giao dịch thông qua ATM , Giao dịch thông qua sàn giao dịch"
                     ]
                 }
             ]

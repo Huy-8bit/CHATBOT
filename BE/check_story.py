@@ -38,6 +38,7 @@ def get_response(input_text, data):
                         result['ratio'] = ratio_of_matches(input_text, value['story'][i]['patterns'][j])
                         list.append(result)
                         return value['story'][i]['responses'][0]
+                    
     for i in range(len(list)):
         if list[i]['ratio'] > result['ratio']:
             result['responses'] = list[i]['responses']
@@ -50,3 +51,4 @@ def get_text(input_text):
     lower_strings(data)
     result = get_response(input_text, data)
     return result
+

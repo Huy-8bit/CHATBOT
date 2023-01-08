@@ -14,22 +14,6 @@ def get_message_process(messages_input):
     else:
         return result
 
-
-# def main():
-#     while True:
-#         # print(intents)
-#         print("Bạn: ", end="")
-#         messages_input = " " + input()
-#         messages_input = text_normalize(messages_input)
-#         if 'quit' in messages_input:
-#             break
-#         else:
-#             replay = get_message_process(messages_input)
-#             print("Bot: ", replay)
-
-
-# main()
-
 def get_messge(messages_input):
     messages_input = text_normalize(messages_input)
     relay = get_message_process(messages_input)
