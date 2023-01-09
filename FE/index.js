@@ -1,6 +1,8 @@
 function sendMessage(input) {
+    // fetch("http://localhost:5000/send-message", {
     // Send the input to the server
-    fetch("http://127.0.0.1:5000/send-message", {
+    fetch("http://192.168.1.5:5000/send-message", {
+
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ input: input }),
