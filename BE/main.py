@@ -56,7 +56,7 @@ def get_text(input_text):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/send-message', methods=['POST'])
+@app.route('/', methods=['POST'])
 def send_message():
     # Get the message from the request body
     message = request.get_json()['input']
